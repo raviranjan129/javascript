@@ -23,15 +23,19 @@ class product{
  // (2 : behaviours => class methods / member function);
 
  buyProduct(){
-    console.log("bought a new product");
+    console.log("bought a new product",this);
  }
 
 }
+ 
 
-
+    
 const obj1 = new product ("iphone",100000,"Apple","Some image");  // new keyword gives the access  of newly created object;
 
 console.log(obj1);
+
+
+
 
 const obj2 = new product ("S3",90000,"Samsung","Some image");
 
