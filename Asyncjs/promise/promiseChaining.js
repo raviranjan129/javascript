@@ -20,13 +20,13 @@ const makingtoast = function(){
 }
  makeTea()
  .then(TeaResult=>{
-    console.log(TeaResult);
+    console.log(TeaResult); // output :Tea is ready
 
-    return makingtoast()
+    return makingtoast() //Return the promise of making toast
  })
  .then( ToastResult =>{
-    console.log(ToastResult);
+    console.log(ToastResult); //output :Toast is ready;
  })
 .catch(err =>{
-    console.log(" error is logged with",err);
+    console.log(" error is logged with",err);  // Handle any errors in the promise chain;
 })
