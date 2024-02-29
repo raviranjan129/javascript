@@ -17,7 +17,7 @@ function analyzeData(arrayofNumber){
         
         const isPositive = arrayofNumber.every(num=> num >=0);
         if (!isPositive){
-rej("Error");
+rej("Error ! atleast one negative number found");
 
 
         }else{
