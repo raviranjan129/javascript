@@ -19,5 +19,5 @@ createPromise(10000)
 })
 .catch(function r3(value){
     console.log("error handler",value);
-    return value*2
+    return value*3
 })
