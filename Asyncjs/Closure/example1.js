@@ -21,11 +21,14 @@ function outer(){
 
     function inner(){
         i +=1;
+        return i;
 
     }
     return inner;
 }
 
 let x=outer();
+console.log(x()) // return 1
+console.log(x()) // return 2
 
 console.log(typeof(x))
