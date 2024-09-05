@@ -30,6 +30,7 @@ function uploadFile(FileName,newUrl){
             res(UploadResponse);
         }, 3000);
     })
+
 }
 
 // downloader("www.google.com")
