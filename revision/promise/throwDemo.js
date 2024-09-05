@@ -26,7 +26,7 @@ createPromise(1000) // returns pr1 {value:undefined ,state:pending , onfulfilled
 },function r2(value){
     console.log("pr 2 executing",value)
     return 10;
-})       // .then on pr2 returns pr3 {value:undefined ,state:pending , onfulfilled:[h],onrejected: []}
+})       // .then on pr2 returns pr3 {value:undefined ,state:pending , onfulfilled:[h],onrejected: []} 
 .then(function h(value){
     console.log("value in third then",value);
     return value*2;
