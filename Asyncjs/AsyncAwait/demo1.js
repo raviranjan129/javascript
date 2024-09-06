@@ -6,7 +6,7 @@ function downloader(url){
         setTimeout(() => {
             console.log("downloaded completed")
             let downloadeddata="dummyData";
-            res(downloadeddata)
+            rej(downloadeddata)
         }, 4000);
     })
 }
@@ -36,6 +36,10 @@ function uploadFile(File,newUrl){
 }
 
 async function execute() {
+   try{
+
+// try block;
+
     console.log("we are inside the  execute function");
 
     const downloadedData=await downloader("www.google.com")
@@ -45,8 +49,17 @@ async function execute() {
     const response = await uploadFile(filename,"drive.google.com");
     console.log("upload response is ",response)
 
+   }catch(err){
+// catch block
+
+console.log("handled the error by logging it",err)
+   }
+
 }
 
 console.log("start");
 execute();
 console.log("end")
+
+
+// async function always returns a promise;
