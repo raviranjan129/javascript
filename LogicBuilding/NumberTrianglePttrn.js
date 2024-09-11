@@ -8,14 +8,14 @@
  */
 
 function NumberTriangle(n){
-    for(let i=1;i<=n;i++){
-        for(let j=1; j<=n-i;j++){
-            console.log("")
-        }
+
+    //outer loop for handling the number of rows
+    for (let i=1;i<=n;i++){
+        // inner loop for handling the number of columns;
         for(let j=1;j<=i;j++){
-            process.stdout.write(i + "")
+            process.stdout.write(i + " ")  //this will print in same line;
         }
-        console.log()
+console.log() // this is for changing the line;
     }
     
 }
