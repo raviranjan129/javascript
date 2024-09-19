@@ -4,7 +4,7 @@
 
 
 const makeTea = function(){
-    return new Promise((res,rej)=>{
+    return new Promise((res)=>{
         setTimeout(() => {
             res("Tea is ready!");
         }, 2000);
