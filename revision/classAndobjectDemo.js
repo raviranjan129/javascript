@@ -14,4 +14,4 @@ class product{
     }
 }
 const p1=new product("ipnone",100000,"apple iphone","some Image") //new-> it will create new plane js obj .2> some kind of linking.3>allocate corresponding obj to constructor
-console.log(p1) 
+console.log(p1)  
