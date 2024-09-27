@@ -17,4 +17,4 @@ displayFromOuter:function(){
 }
 
 obj.displayFromOuter()
-obj.nested.displayFromInner()
+obj.nested.displayFromInner() // nested is callsite for displayFromInner;
